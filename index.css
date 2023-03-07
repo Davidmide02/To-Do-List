@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: blanchedalmond;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(54, 8, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin: 2rem 0rem;
+    font-size: 1.25rem;
+    display: flex;
+    width: 100%;
+
+}
+
+
+header h1 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+
+input,
+button {
+    background: none;
+    outline: none;
+    appearance: none;
+    border: none;
+}
+
+form #add-task-input {
+    background-color: blanchedalmond;
+    width: 20rem;
+    padding: 0.2rem 0.5rem;
+    max-width: 85rem;
+    border-radius: 1rem;
+    color: black;
+}
+
+#add-task {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-left: 0.67rem;
+    cursor: pointer;
+}
+
+#add-task:hover {
+    opacity: 0.8;
+    transition: 1s;
+    background-color: gray;
+    border-radius: 2rem;
+}
+
+#add-task:active {
+    opacity: 0.6;
+    transition: 1s;
+    background-color: transparent;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.3rem 2rem 0.3rem;
+    margin-top: 1rem;
+    background-color: gray;
+    box-sizing: border-box;
+    /* transition: 3s; */
+
+}
+
+.tasks .task .display-task {
+    width: 350px;
+    margin-top: 0 auto;
+    font-weight: 00;
+}
+
+.tasks .task .display-task:not(:read-only) {
+    /* color: crimson; */
+    font-weight: 900;
+    color: black;
+    text-transform: lowercase;
+
+}
+
+.action {
+    display: flex;
+}
+
+.action button {
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+.action .edit {
+    /* color: rgb(242, 217, 222); */
+    color: blanchedalmond;
+
+    margin-right: 1rem;
+}
+
+.action .delete {
+    color: crimson;
+
+
+}
+
+footer {
+    margin-top: 3rem;
+    float: bottom;
+}
+
+footer a {
+    color: crimson;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+
+/* Responsiveness */
+
+@media only screen and (max-width:480px) {
+
+    body {
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    header h1 {
+        margin-top: 5rem;
+    }
+
+    header {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    form #add-task-input {
+        width: 100%;
+
+    }
+
+    .tasks .task .display-task {
+        width: 100%;
+    }
+
+
+}
