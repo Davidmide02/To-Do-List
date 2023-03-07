@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL](https://github.com/Davidmide02/To-Do-List.git)
 - Live Site URL: [live site URL](https://majestic-faloodeh-0798e9.netlify.app/)
 
 ## My proces
